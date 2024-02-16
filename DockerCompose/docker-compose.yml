@@ -1,13 +1,9 @@
-version: 'version'
+version: '3.7'
 services:
   nginx:
-    image: nginx
+    image: nginx:alpine
     container_name: nginx
     ports:
-      -"80:80"
-    networks:
-      - redNginx
-networks:
-  redNginx
-    
+      -"8000:80"
+
 
